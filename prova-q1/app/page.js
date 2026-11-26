@@ -2,9 +2,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main style={{ padding: "1.5rem" }}>
+    <main className="home">
       <h1>Catálogo Acadêmico</h1>
-      <Link href="/cursos">Ir para o catálogo de cursos</Link>
+      <p>
+        Consulte as unidades curriculares do curso de Tecnologia em Análise e Desenvolvimento de
+        Sistemas (TADS) do IFMS, Campus Três Lagoas.
+      </p>
+      <Link href="/cursos" prefetch={true} className="botao">Acessar o catálogo de cursos</Link>
     </main>
   );
 }
