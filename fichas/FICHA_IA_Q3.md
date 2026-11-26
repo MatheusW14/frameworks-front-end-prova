@@ -62,16 +62,16 @@ Enunciado: Construa a página de Dashboard Analítico Acadêmico que consome e a
 
 | Arquivo | Linhas | Gerado no prompt |
 |---|---|---|
-| `app/dashboard/data.js` | 1 a ____ | 1 |
-| `app/dashboard/page.js` | 1 a ____ | 1 |
-| `app/dashboard/BlocoEvasao.js` | 1 a ____ | 1 |
-| `app/dashboard/SkeletonEvasao.js` | 1 a ____ | 1 |
-| `app/dashboard/loading.js` | 1 a ____ | 1 |
-| `app/dashboard/dashboard.css` | 1 a ____ | 1 |
+| `app/dashboard/data.js` | 1 a 30 | 1 |
+| `app/dashboard/page.js` | 1 a 54 | 1 |
+| `app/dashboard/BlocoEvasao.js` | 1 a 26 | 1 |
+| `app/dashboard/SkeletonEvasao.js` | 1 a 13 | 1 |
+| `app/dashboard/loading.js` | 1 a 29 | 1 |
+| `app/dashboard/dashboard.css` | 1 a 38 | 1 |
 
 ### Blocos gerados por IA e modificados pelo aluno
 
-Linhas: 1 a ____ do arquivo `fichas/FICHA_IA_Q3.md` (a própria ficha).
+Linhas: 1 a 119 do arquivo `fichas/FICHA_IA_Q3.md` (a própria ficha).
 
 **Descrição das alterações manuais:**
 

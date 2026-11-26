@@ -58,16 +58,16 @@ Enunciado: Desenvolva a página de Ouvidoria Acadêmica que recebe manifestaçõ
 
 | Arquivo | Linhas | Gerado no prompt |
 |---|---|---|
-| `app/ouvidoria/constantes.js` | 1 a ____ | 1 |
-| `app/ouvidoria/store.js` | 1 a ____ | 1 |
-| `app/ouvidoria/actions.js` | 1 a ____ | 1 |
-| `app/ouvidoria/FormularioOuvidoria.js` | 1 a ____ | 1 |
-| `app/ouvidoria/page.js` | 1 a ____ | 1 |
-| `app/ouvidoria/ouvidoria.css` | 1 a ____ | 1 |
+| `app/ouvidoria/constantes.js` | 1 a 3 | 1 |
+| `app/ouvidoria/store.js` | 1 a 44 | 1 |
+| `app/ouvidoria/actions.js` | 1 a 47 | 1 |
+| `app/ouvidoria/FormularioOuvidoria.js` | 1 a 89 | 1 |
+| `app/ouvidoria/page.js` | 1 a 56 | 1 |
+| `app/ouvidoria/ouvidoria.css` | 1 a 48 | 1 |
 
 ### Blocos gerados por IA e modificados pelo aluno
 
-Linhas: 1 a ____ do arquivo `fichas/FICHA_IA_Q4.md` (a própria ficha).
+Linhas: 1 a 117 do arquivo `fichas/FICHA_IA_Q4.md` (a própria ficha).
 
 **Descrição das alterações manuais:**
 

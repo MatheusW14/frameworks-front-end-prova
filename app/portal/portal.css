@@ -1,0 +1,41 @@
+.portal-raiz { background: #f1f5f9; color: #1f2937; font-size: 1rem; }
+.portal-raiz[data-fonte="ampliada"] { font-size: 1.4rem; }
+
+.portal-pagina { min-height: calc(100vh - var(--altura-barra)); padding: 1.5rem; }
+.portal-conteudo { max-width: 860px; margin: 0 auto; }
+.portal-conteudo h1 { margin: 1rem 0 0.75rem; font-size: 1.8em; }
+.portal-conteudo h2 { font-size: 1.2em; color: #4c1d95; }
+
+.portal-barra {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.6em;
+  margin: 0 0 1.25em; padding: 0.8em 1em; border-radius: 12px;
+  background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.portal-barra-titulo { font-weight: 700; margin-right: 0.5em; }
+.portal-barra button {
+  padding: 0.5em 0.9em; border: 2px solid #7c3aed; border-radius: 8px;
+  background: #fff; color: #5b21b6; font: inherit; font-weight: 600; cursor: pointer;
+}
+.portal-barra button[aria-pressed="true"] { background: #7c3aed; color: #fff; }
+.portal-barra button:focus-visible { outline: 3px solid #c4b5fd; outline-offset: 2px; }
+
+.portal-mural { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.8em; }
+.portal-aviso { padding: 1em 1.2em; border-radius: 12px; background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); }
+.portal-aviso p { margin: 0.5em 0 0; }
+.portal-aviso-topo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6em; }
+.portal-meta { font-size: 0.85em; color: #6b7280; }
+.portal-chip { padding: 0.1em 0.6em; border-radius: 999px; font-size: 0.8em; font-weight: 700; background: #e0e7ff; color: #3730a3; }
+.portal-chip.urgente { background: #fee2e2; color: #991b1b; }
+
+/* Alto contraste: aplicado por CSS a partir do atributo do provedor,
+   então o mural (Server Component) muda sem virar Client Component. */
+.portal-raiz[data-contraste="alto"] { background: #000; color: #fff; }
+.portal-raiz[data-contraste="alto"] a { color: #ffff00; }
+.portal-raiz[data-contraste="alto"] .portal-conteudo h2 { color: #ffff00; }
+.portal-raiz[data-contraste="alto"] .portal-barra,
+.portal-raiz[data-contraste="alto"] .portal-aviso { background: #000; border: 2px solid #ffff00; box-shadow: none; }
+.portal-raiz[data-contraste="alto"] .portal-barra button { background: #000; color: #ffff00; border-color: #ffff00; }
+.portal-raiz[data-contraste="alto"] .portal-barra button[aria-pressed="true"] { background: #ffff00; color: #000; }
+.portal-raiz[data-contraste="alto"] .portal-meta { color: #e5e7eb; }
+.portal-raiz[data-contraste="alto"] .portal-chip,
+.portal-raiz[data-contraste="alto"] .portal-chip.urgente { background: #ffff00; color: #000; }

@@ -79,12 +79,12 @@ Enunciado: Desenvolva um painel completo para monitoramento e cadastro dos Proje
 
 | Arquivo | Linhas | Gerado no prompt |
 |---|---|---|
-| `app/projetos/page.js` | 1 a ____ | 1 |
-| `app/projetos/projetos.css` | 1 a ____ | 1 |
+| `app/projetos/page.js` | 1 a 234 | 1 |
+| `app/projetos/projetos.css` | 1 a 50 | 1 |
 
 ### Blocos gerados por IA e modificados pelo aluno
 
-Linhas: 1 a ____ do arquivo `fichas/FICHA_IA_Q2.md` (a própria ficha).
+Linhas: 1 a 132 do arquivo `fichas/FICHA_IA_Q2.md` (a própria ficha).
 
 **Descrição das alterações manuais:**
 
