@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; }
+.cursos-layout { display: flex; min-height: 100vh; }
+.sidebar { background: #f2f4f7; border-right: 1px solid #ccc; padding: 1rem; transition: width .2s; }
+.sidebar.expandida { width: 240px; }
+.sidebar.recolhida { width: 70px; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li { margin: .75rem 0; }
+.sidebar a[aria-current="page"] { font-weight: bold; }
+.conteudo { flex: 1; padding: 1.5rem; }
+button { padding: .4rem .8rem; font: inherit; cursor: pointer; }
