@@ -1,0 +1,48 @@
+.ouv-pagina { min-height: calc(100vh - var(--altura-barra)); padding: 1.5rem; background: #f1f5f9; color: #1f2937; }
+.ouv-conteudo { max-width: 860px; margin: 0 auto; }
+.ouv-conteudo h1 { margin: 1rem 0 0.25rem; }
+.ouv-sub { margin: 0 0 1.5rem; color: #6b7280; }
+
+.ouv-cartao {
+  margin-bottom: 1rem; padding: 1.25rem 1.5rem; border-radius: 12px;
+  background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.ouv-cartao h2 { margin: 0 0 1rem; font-size: 1.1rem; color: #4c1d95; }
+
+.ouv-form { display: grid; gap: 1rem; }
+.ouv-campo { display: grid; gap: 0.3rem; }
+.ouv-campo label { font-weight: 600; font-size: 0.9rem; }
+.ouv-campo input, .ouv-campo select, .ouv-campo textarea {
+  padding: 0.55rem 0.7rem; border: 2px solid #d1d5db; border-radius: 8px;
+  font: inherit; background: #fff; color: inherit; resize: vertical;
+}
+.ouv-campo input:focus, .ouv-campo select:focus, .ouv-campo textarea:focus {
+  outline: 3px solid #c4b5fd; border-color: #7c3aed;
+}
+.ouv-campo .invalido { border-color: #dc2626; background: #fef2f2; }
+.ouv-ajuda { margin: 0; font-size: 0.8rem; color: #6b7280; }
+.ouv-erro { margin: 0; font-size: 0.85rem; font-weight: 600; color: #b91c1c; }
+.ouv-sucesso {
+  margin: 0; padding: 0.7rem 0.9rem; border-radius: 8px;
+  background: #f0fdf4; border: 1px solid #16a34a; color: #15803d; font-weight: 600;
+}
+
+.ouv-botao {
+  justify-self: start; padding: 0.65rem 1.25rem; border: 0; border-radius: 8px;
+  background: #7c3aed; color: #fff; font: inherit; font-weight: 700; cursor: pointer;
+}
+.ouv-botao:hover:not(:disabled) { background: #6d28d9; }
+.ouv-botao:disabled { background: #a5a5b5; cursor: wait; }
+.ouv-botao:focus-visible { outline: 3px solid #c4b5fd; outline-offset: 2px; }
+
+.ouv-contagem { margin: 0 0 0.75rem; font-size: 0.9rem; color: #6b7280; }
+.ouv-mural { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.7rem; }
+.ouv-item { padding: 0.8rem 1rem; border: 1px solid #e5e7eb; border-radius: 8px; }
+.ouv-item p { margin: 0.5rem 0 0; overflow-wrap: anywhere; }
+.ouv-item-topo { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+.ouv-data { margin-left: auto; font-size: 0.8rem; color: #6b7280; }
+
+.ouv-chip { padding: 0.1rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; }
+.tipo-elogio { background: #dcfce7; color: #166534; }
+.tipo-sugestao { background: #dbeafe; color: #1e40af; }
+.tipo-reclamacao { background: #fee2e2; color: #991b1b; }
