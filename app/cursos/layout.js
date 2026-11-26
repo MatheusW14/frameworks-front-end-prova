@@ -1,3 +1,4 @@
+import "./cursos.css";
 import Sidebar from "./Sidebar";
 
 // Layout aninhado (Server Component). Ele não é remontado ao navegar entre

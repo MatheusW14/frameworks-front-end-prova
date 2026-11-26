@@ -16,7 +16,7 @@
 
 ## 0. Observação de transparência (antes do Prompt 1)
 
-No início da conversa, enviei fotos das páginas da prova (sem texto) e recebi um projeto com as 5 questões práticas já resolvidas. **Esse projeto foi descartado e não foi usado.** Em seguida, conversei com a IA sobre como a ficha deve ser preenchida e pedi a transcrição das questões práticas. Depois, decidi refazer a Questão 1 do zero, a partir do Prompt 1 abaixo. Tudo que foi entregue está nos prompts 1 a 12.
+No início da conversa, enviei fotos das páginas da prova (sem texto) e recebi um projeto com as 5 questões práticas já resolvidas. **Esse projeto foi descartado e não foi usado.** Em seguida, conversei com a IA sobre como a ficha deve ser preenchida e pedi a transcrição das questões práticas. Depois, decidi refazer a Questão 1 do zero, a partir do Prompt 1 abaixo. Tudo que foi entregue está nos prompts 1 a 14.
 
 ---
 
@@ -71,6 +71,40 @@ O estudante deve implementar a rota de Detalhes de Cursos do catálogo instituci
 
 "ficou perfeito agora. Eu pensei em fazer um documento dentro da pasta q1, com a ficha da documentação da IA, ou colocar no readme dentro da pasta tambem, oque voce acha? Antes de irmos pra atividade 2"
 
+### Prompt 8:
+
+"monte por favor"
+
+*(gerou o arquivo `FICHA_IA_Q1.md`, a própria ficha)*
+
+### Prompts 9 a 12 (consultas e ajustes da própria ficha; não geraram código do projeto):
+
+**Prompt 9:** "onde eu vejo esse modelo"
+
+**Prompt 10:** "como eu testaria esse not found?"
+
+*(anexo: print de um trecho da tabela de testes da ficha)*
+
+**Prompt 11:** "ficou assim"
+
+*(anexo: a ficha preenchida por mim, para revisão)*
+
+**Prompt 12:** "aplica pra mim as alteraçoes"
+
+*(a IA aplicou na ficha as correções sugeridas na revisão do Prompt 11)*
+
+### Prompt 13:
+
+"Antes de ir pra questão 2, um amigo meu fez desse jeito pra pessoa poder acessar todos os exercícios, queria fazer algo parecido tambem, só que com o visual diferente e adicionar em cada um dele, o documento ja de IA, pro professor poder acessar a pagina em cada um dos seus respectivos projetos"
+
+*(anexo: print de uma página com os cartões das 5 questões, usada como referência)*
+
+### Prompt 14:
+
+"então, mas o certo não seria esse layout inicial ficar fora da pasta q1? porque ele abrange todas as questões"
+
+*(a IA renomeou o projeto para `prova-frameworks-frontend`, separou os arquivos compartilhados dos da Questão 1 e generalizou o README)*
+
 ---
 
 ## 2. MAPEAMENTO DE AUTORIA NO CÓDIGO FONTE
@@ -81,25 +115,34 @@ Versão final entregue. Intervalos de linhas conferidos na versão gerada pela I
 
 | Arquivo | Linhas | Gerado no prompt |
 |---|---|---|
-| `app/layout.js` | 1 a 11 | 1 |
-| `app/cursos/layout.js` | 1 a 12 | 1 |
-| `app/page.js` | 1 a 14 | 6 |
-| `app/globals.css` | 1 a 79 | 5 e 6 |
-| `app/cursos/data.js` | 1 a 69 | 6 |
+| `app/layout.js` | 1 a 15 | 1, 13 e 14 |
+| `app/page.js` | 1 a 64 | 13 e 14 |
+| `app/globals.css` | 1 a 97 | 5, 6, 13 e 14 |
+| `app/components/BarraProva.js` | 1 a 36 | 13 e 14 |
+| `app/lib/prova.js` | 1 a 46 | 13 e 14 |
+| `app/lib/status.js` | 1 a 18 | 13 |
+| `app/not-found.js` | 1 a 10 | 13 |
+| `app/fichas/[numero]/page.js` | 1 a 47 | 13 e 14 |
+| `app/fichas/[numero]/BotaoImprimir.js` | 1 a 9 | 13 |
+| `app/cursos/layout.js` | 1 a 13 | 1 e 14 |
+| `app/cursos/cursos.css` | 1 a 59 | 5, 6 e 14 |
 | `app/cursos/Sidebar.js` | 1 a 72 | 6 |
+| `app/cursos/data.js` | 1 a 69 | 6 |
 | `app/cursos/page.js` | 1 a 24 | 6 |
 | `app/cursos/[id]/page.js` | 1 a 70 | 6 |
 | `app/cursos/[id]/not-found.js` | 1 a 13 | 6 |
-| `package.json` | 1 a 16 | 2 |
-| `README.md` | 1 a 123 | 2 e 6 |
+| `package.json` | 1 a 19 | 2, 13 e 14 |
+| `README.md` | 1 a 158 | 2, 6, 13 e 14 |
 | `.nvmrc` | 1 a 1 | 2 |
 | `.gitignore` | 1 a 2 | 2 |
+
+Os arquivos de `app/` fora de `app/cursos/` (painel da prova, barra superior, fichas e estilos compartilhados) valem para as 5 questões. A pasta `app/cursos/` é exclusiva da Questão 1.
 
 Observação: o `package-lock.json` foi gerado automaticamente pelo `npm`, e a pasta `node_modules` é instalada pelo `npm`.
 
 ### Blocos gerados por IA e modificados pelo aluno
 
-Linhas: 1 a 175 do arquivo `FICHA_IA_Q1.md` (a própria ficha).
+Linhas: 1 a 196 do arquivo `fichas/FICHA_IA_Q1.md` (a própria ficha).
 
 **Descrição das alterações manuais:**
 

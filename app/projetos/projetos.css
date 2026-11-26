@@ -1,0 +1,50 @@
+.proj-pagina { min-height: calc(100vh - var(--altura-barra)); padding: 1.5rem; background: #f1f5f9; color: #1f2937; }
+.proj-conteudo { max-width: 860px; margin: 0 auto; }
+.proj-conteudo h1 { margin: 1rem 0 0.25rem; }
+.proj-sub { margin: 0 0 1.5rem; color: #6b7280; }
+
+.proj-cartao {
+  margin-bottom: 1rem; padding: 1.25rem 1.5rem; border-radius: 12px;
+  background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.proj-cartao h2 { margin: 0 0 1rem; font-size: 1.1rem; color: #4c1d95; }
+
+.proj-form { display: grid; gap: 1rem; }
+.proj-filtros { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 600px) { .proj-filtros { grid-template-columns: 1fr; } }
+
+.proj-campo { display: grid; gap: 0.3rem; }
+.proj-campo label { font-weight: 600; font-size: 0.9rem; }
+.proj-campo input, .proj-campo select {
+  padding: 0.55rem 0.7rem; border: 2px solid #d1d5db; border-radius: 8px;
+  font: inherit; background: #fff; color: inherit;
+}
+.proj-campo input:focus, .proj-campo select:focus { outline: 3px solid #c4b5fd; border-color: #7c3aed; }
+.proj-campo input.invalido { border-color: #dc2626; background: #fef2f2; }
+
+.proj-ajuda { margin: 0; font-size: 0.8rem; color: #6b7280; }
+.proj-erro { margin: 0; font-size: 0.85rem; font-weight: 600; color: #b91c1c; }
+
+.proj-botao {
+  justify-self: start; padding: 0.65rem 1.25rem; border: 0; border-radius: 8px;
+  background: #7c3aed; color: #fff; font: inherit; font-weight: 700; cursor: pointer;
+}
+.proj-botao:hover:not(:disabled) { background: #6d28d9; }
+.proj-botao:disabled { background: #a5a5b5; cursor: not-allowed; }
+.proj-botao:focus-visible, .proj-remover:focus-visible { outline: 3px solid #c4b5fd; outline-offset: 2px; }
+
+.proj-contagem { margin: 1rem 0 0.5rem; font-size: 0.9rem; color: #6b7280; }
+.proj-vazio { padding: 1rem; border-radius: 8px; background: #f9fafb; color: #6b7280; }
+
+.proj-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+.proj-item {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: 0.75rem 1rem; border: 1px solid #e5e7eb; border-radius: 8px;
+}
+.proj-meta { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.25rem; font-size: 0.85rem; color: #6b7280; }
+.proj-chip { padding: 0.1rem 0.55rem; border-radius: 999px; background: #ede9fe; color: #5b21b6; font-weight: 600; }
+.proj-remover {
+  padding: 0.4rem 0.8rem; border: 1px solid #fecaca; border-radius: 8px;
+  background: #fff; color: #b91c1c; font: inherit; cursor: pointer;
+}
+.proj-remover:hover { background: #fef2f2; }

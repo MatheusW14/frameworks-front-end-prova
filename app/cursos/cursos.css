@@ -1,28 +1,8 @@
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  color: #1f2937;
-  background: #ffffff;
-  line-height: 1.5;
-}
-
-a { color: #2563eb; }
-
-/* Início */
-.home { max-width: 640px; margin: 15vh auto 0; padding: 0 1.5rem; text-align: center; }
-.botao {
-  display: inline-block; margin-top: 1rem; padding: 0.75rem 1.25rem;
-  background: #2563eb; color: #fff; border-radius: 8px; text-decoration: none; font-weight: bold;
-}
-.botao:hover { background: #1d4ed8; }
-
 /* Layout /cursos */
-.cursos-layout { display: flex; min-height: 100vh; }
+.cursos-layout { display: flex; min-height: calc(100vh - var(--altura-barra)); }
 
 .sidebar {
-  position: sticky; top: 0; height: 100vh;
+  position: sticky; top: var(--altura-barra); height: calc(100vh - var(--altura-barra));
   background: #1e293b; color: #fff; padding: 1rem;
   transition: width 0.2s; overflow: hidden; flex-shrink: 0;
 }
