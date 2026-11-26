@@ -75,6 +75,7 @@ Este é um projeto **Node.js**, então não usa `venv` do Python. O equivalente 
 
 ```
 prova-q1/
+├── FICHA_IA_Q1.md        # ficha de documentação de uso de IA
 ├── package.json          # dependências e scripts
 ├── package-lock.json     # versões exatas
 ├── .nvmrc                # versão do Node
